@@ -25,6 +25,9 @@ ul {
   display: flex;
   gap: 20px;
 }
+nav ul a:hover {
+  color: blue;
+}
 a {
   text-decoration: none;
   color: #e5e7eb;
@@ -55,6 +58,7 @@ button {
   color: #e5e7eb;
   font-weight: 900;
   padding: 10px;
+  font-size: 18px;
   padding-left: 3rem;
   padding-right: 3rem;
   border-color: white;
@@ -67,4 +71,128 @@ button {
 p {
   color: #e5e7eb;
   font-size: 18px;
+}
+.cryptos .title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f2937;
+  text-align: center;
+}
+.cryptographies {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+}
+.cryptographies div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cryptographies div img {
+  padding: 3px;
+  border: #e5e7eb solid 3px;
+  border-radius: 10%;
+  width: 170px;
+  height: 170px;
+}
+.cryptographies div p {
+  color: #1f2937;
+}
+.quote {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #e5e7eb;
+  /* height: 300px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quotes {
+  width: 65%;
+  color: #1f2937;
+  font-size: 36px;
+  font-style: italic;
+}
+.quotes span {
+  float: right;
+}
+.author {
+  font-weight: bold;
+}
+.call-section {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.call {
+  height: 80%;
+  padding: 1%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+  border: 1px #e5e7eb solid;
+  background-color: #3882f6;
+}
+.call button {
+  background-color: transparent;
+  border: 2px solid;
+}
+.text {
+  color: #e5e7eb;
+}
+.text h3 {
+  font-weight: 800;
+}
+footer {
+  height: 4.5rem;
+  text-align: center;
+  background-color: #1f2937;
+}
+
+@media screen and (max-width: 990px) {
+  .hero {
+    gap: 15px;
+    flex-direction: column-reverse;
+  }
+  .call {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  .quotes {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-section {
+    padding: 0.5rem;
+  }
+  .cryptographies {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  h3 {
+    font-size: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
 }
